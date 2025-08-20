@@ -72,6 +72,7 @@
             position: relative;
             transform: perspective(1000px) rotateY(-10deg);
             box-shadow: 0 20px 40px rgba(239, 130, 238, 0.3);
+            border-radius: 12px;
         }
 
         .logo-h::before {
@@ -266,6 +267,9 @@
             margin-bottom: 18px;
             font-size: 1.4rem;
             font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
         .briefing-card p, .briefing-card ul {
@@ -412,6 +416,36 @@
             opacity: 0.9;
         }
 
+        .highlight-section {
+            background: linear-gradient(135deg, rgba(239, 130, 238, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px 0;
+            border: 2px solid rgba(239, 130, 238, 0.2);
+        }
+
+        .highlight-section h3 {
+            color: #ef82ee;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .solution-card {
+            background: linear-gradient(135deg, #6b8f5a 0%, #7ba05c 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 20px;
+            margin: 20px 0;
+            box-shadow: 0 12px 25px rgba(107, 143, 90, 0.3);
+        }
+
+        .solution-card h4 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
         @keyframes slideInFromLeft {
             from {
                 opacity: 0;
@@ -520,7 +554,7 @@
             <div class="nav-card" onclick="showSection('atividade1')">
                 <div class="icon">🎯</div>
                 <h3>Atividade 1</h3>
-                <p>Briefing Estratégico<br>Workshop de Estileto</p>
+                <p>Briefing Estratégico<br>Workshop Donz Santana</p>
                 <div class="btn">Ver Solução</div>
             </div>
 
@@ -534,53 +568,74 @@
             <div class="nav-card" onclick="showSection('atividade3')">
                 <div class="icon">📊</div>
                 <h3>Atividade 3</h3>
-                <p>Análise de Performance<br>Dons Santana</p>
+                <p>Análise de Performance<br>Moov Car Service</p>
                 <div class="btn">Ver Solução</div>
             </div>
         </div>
 
         <!-- Atividade 1 -->
         <div id="atividade1" class="content-section">
-            <h2>🎯 Briefing Estratégico - Workshop de Estileto</h2>
+            <h2>🎯 Briefing Estratégico - Workshop Donz Santana</h2>
             
             <div class="briefing-grid">
                 <div class="briefing-card">
                     <h4>📋 Informações Gerais</h4>
                     <ul>
-                        <li>Cliente: Dons Santana</li>
-                        <li>Data: 28 de agosto</li>
-                        <li>Horário: 10h às 12h (2h)</li>
-                        <li>Meta: 40 vagas</li>
-                        <li>Nível: Avançado (1,5-2 anos)</li>
+                        <li><strong>Cliente:</strong> Donz Santana (@donz_santana)</li>
+                        <li><strong>Evento:</strong> Workshop de Estileto Avançado</li>
+                        <li><strong>Data:</strong> 28 de agosto</li>
+                        <li><strong>Horário:</strong> 10h às 12h (2 horas)</li>
+                        <li><strong>Meta:</strong> 40 vagas totais</li>
+                        <li><strong>Nível:</strong> Avançado (1,5-2 anos de experiência)</li>
                     </ul>
                 </div>
 
                 <div class="briefing-card">
                     <h4>🎭 Profissionais Confirmadas</h4>
                     <ul>
-                        <li>Amanda (RJ) - Bailarina da Anitta</li>
-                        <li>Júlia (SP) - Bailarina da Luisa Sonza</li>
+                        <li><strong>Amanda (Rio de Janeiro)</strong><br>Bailarina da Anitta</li>
+                        <li><strong>Júlia (São Paulo)</strong><br>Bailarina da Luisa Sonza</li>
                     </ul>
                 </div>
 
                 <div class="briefing-card">
                     <h4>💰 Estratégia de Preços</h4>
                     <ul>
-                        <li>1º Lote: R$ 250,00</li>
-                        <li>2º Lote: R$ 350,00</li>
-                        <li>Vendas em grupo disponíveis</li>
-                        <li>Pacotes para excursões</li>
+                        <li><strong>1º Lote:</strong> R$ 250,00</li>
+                        <li><strong>2º Lote:</strong> R$ 350,00 (+40% markup)</li>
+                        <li><strong>Vendas em grupo:</strong> Disponíveis</li>
+                        <li><strong>Excursões:</strong> Pacotes regionais</li>
                     </ul>
                 </div>
 
                 <div class="briefing-card">
                     <h4>🎯 Segmentação do Público</h4>
                     <ul>
-                        <li>15 alunas internas da Dons</li>
-                        <li>25 alunas de 5 regiões do RS</li>
-                        <li>Parcerias com outras escolas</li>
-                        <li>Base de clientes externa</li>
+                        <li><strong>Base interna:</strong> 15 alunas da Donz</li>
+                        <li><strong>Regional:</strong> 25 alunas de 5 regiões do RS</li>
+                        <li><strong>Parcerias:</strong> Escolas de dança parceiras</li>
+                        <li><strong>Expansão:</strong> Base de clientes externa</li>
                     </ul>
+                </div>
+            </div>
+
+            <div class="highlight-section">
+                <h3>🚀 Estratégia de Execução</h3>
+                <div class="solution-card">
+                    <h4>Fase 1: Planejamento Estratégico (Semanas 1-2)</h4>
+                    <p>Pesquisa de mercado, mapeamento de escolas no RS, definição de personas e criação de materiais base. Identificação de influencers e comunidades de dança.</p>
+                </div>
+                <div class="solution-card">
+                    <h4>Fase 2: Criação e Conteúdo (Semanas 3-4)</h4>
+                    <p>Desenvolvimento de identidade visual, vídeos de apresentação das instrutoras, landing page e material para parceiros/revendedores.</p>
+                </div>
+                <div class="solution-card">
+                    <h4>Fase 3: Lançamento e Vendas (Semanas 5-6)</h4>
+                    <p>Soft launch para base interna, parcerias regionais, influencer marketing e organização de grupos e excursões.</p>
+                </div>
+                <div class="solution-card">
+                    <h4>Fase 4: Execução e Pós-Evento</h4>
+                    <p>Gestão do evento, cobertura em tempo real, captação de depoimentos e criação de base para futuros eventos.</p>
                 </div>
             </div>
 
@@ -613,47 +668,78 @@
             <div class="briefing-grid">
                 <div class="briefing-card">
                     <h4>🔍 Diagnóstico do Problema</h4>
-                    <p>Gargalo identificado: <strong>dependência linear da aprovação do cliente</strong> criando ponto único de falha no fluxo operacional e impactando todo o cronograma.</p>
+                    <p>Gargalo identificado: <strong>dependência linear da aprovação do cliente</strong> criando ponto único de falha no fluxo operacional e impactando todo o cronograma de execução.</p>
                 </div>
 
                 <div class="briefing-card">
                     <h4>💡 Solução Principal</h4>
-                    <p><strong>Sistema de Múltiplas Camadas</strong> com produção paralela e buffer estratégico de 3 semanas, eliminando dependências críticas.</p>
+                    <p><strong>Sistema "Fast Track Approval"</strong> com múltiplas camadas de aprovação, produção paralela e buffer estratégico de 72h, eliminando dependências críticas.</p>
                 </div>
 
                 <div class="briefing-card">
                     <h4>📊 Categorização de Aprovações</h4>
                     <ul>
-                        <li>Nível 1: Aprovação Automática</li>
-                        <li>Nível 2: Aprovação Expressa (24h)</li>
-                        <li>Nível 3: Aprovação Completa (48h)</li>
-                        <li>SLA de 48h úteis máximo</li>
+                        <li><strong>Nível 1:</strong> Aprovação Automática (conteúdos padrão)</li>
+                        <li><strong>Nível 2:</strong> Aprovação Expressa (24h)</li>
+                        <li><strong>Nível 3:</strong> Aprovação Completa (48h)</li>
+                        <li><strong>SLA máximo:</strong> 48h úteis</li>
                     </ul>
                 </div>
 
                 <div class="briefing-card">
                     <h4>🛡️ Plano de Contingência</h4>
                     <ul>
-                        <li>Banco de 10 conteúdos reserva</li>
-                        <li>Conteúdos substitutos pré-aprovados</li>
-                        <li>30% dos slots realocáveis</li>
-                        <li>Dashboard de status em tempo real</li>
+                        <li><strong>Banco de reserva:</strong> 10 conteúdos aprovados</li>
+                        <li><strong>Substitutos:</strong> Conteúdos pré-aprovados</li>
+                        <li><strong>Flexibilidade:</strong> 30% dos slots realocáveis</li>
+                        <li><strong>Dashboard:</strong> Status em tempo real</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="process-flow">
-                <div class="process-step">
-                    <h4>Semana 1</h4>
-                    <p>Planejamento + Aprovação Interna</p>
+            <div class="highlight-section">
+                <h3>🎯 Nova Metodologia</h3>
+                <div class="solution-card">
+                    <h4>Terça-feira: Planejamento + Aprovação Interna</h4>
+                    <p>Finalização do planejamento com 1 dia de antecedência e aprovação interna imediata, criando buffer de segurança.</p>
                 </div>
-                <div class="process-step">
-                    <h4>Semana 2</h4>
-                    <p>Aprovação Cliente + Produção Paralela</p>
+                <div class="solution-card">
+                    <h4>Quarta-feira: Envio ao Cliente + Produção Paralela</h4>
+                    <p>Envio para aprovação do cliente com início simultâneo da produção de conteúdos de baixo risco (Nível 1).</p>
                 </div>
-                <div class="process-step">
-                    <h4>Semana 3</h4>
-                    <p>Execução com Margem de Segurança</p>
+                <div class="solution-card">
+                    <h4>Quinta-feira: Deadline Aprovação + Ajustes</h4>
+                    <p>Prazo máximo para retorno do cliente (24h). Após esse período, aprovação tácita ou uso de conteúdo substituto.</p>
+                </div>
+                <div class="solution-card">
+                    <h4>Segunda-feira: Execução com Margem</h4>
+                    <p>Início da execução com 72h de buffer e todos os materiais prontos, eliminando correria de última hora.</p>
+                </div>
+            </div>
+
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <h4>Redução Tempo Aprovação</h4>
+                    <div class="number">50%</div>
+                    <p>Meta de melhoria</p>
+                </div>
+
+                <div class="metric-card">
+                    <h4>SLA Cumprido</h4>
+                    <div class="number">90%</div>
+                    <p>Taxa objetivo</p>
+                </div>
+
+                <div class="metric-card">
+                    <h4>Satisfação Equipe</h4>
+                    <div class="number">+30%</div>
+                    <p>Aumento esperado</p>
+                </div>
+
+                <div class="metric-card">
+                    <h4>Buffer Segurança</h4>
+                    <div class="number">72h</div>
+                    <p>Margem operacional</p>
                 </div>
             </div>
 
@@ -662,81 +748,146 @@
 
         <!-- Atividade 3 -->
         <div id="atividade3" class="content-section">
-            <h2>📊 Análise Performance - Dons Santana</h2>
+            <h2>📊 Análise Performance - Moov Car Service</h2>
             
             <div class="metrics-grid">
                 <div class="metric-card">
                     <h4>Seguidores</h4>
-                    <div class="number">31K</div>
+                    <div class="number">12K</div>
                     <p>Base consolidada</p>
                 </div>
 
                 <div class="metric-card">
-                    <h4>Meta Workshop</h4>
-                    <div class="number">40</div>
-                    <p>vagas</p>
+                    <h4>Crescimento Junho</h4>
+                    <div class="number">+55%</div>
+                    <p>vs maio (344 vs 221)</p>
                 </div>
 
                 <div class="metric-card">
-                    <h4>Conversão Atual</h4>
-                    <div class="number">0.13%</div>
-                    <p>Baixo aproveitamento</p>
+                    <h4>Engagement Rate</h4>
+                    <div class="number">0,39%</div>
+                    <p>Muito baixo para o setor</p>
                 </div>
 
                 <div class="metric-card">
-                    <h4>Potencial</h4>
-                    <div class="number">3-5%</div>
-                    <p>Meta recomendada</p>
+                    <h4>Dependência Mídia Paga</h4>
+                    <div class="number">85%</div>
+                    <p>Precisa diversificar</p>
                 </div>
             </div>
 
             <div class="briefing-grid">
                 <div class="briefing-card">
-                    <h4>✅ Pontos Fortes</h4>
+                    <h4>✅ Pontos Fortes Identificados</h4>
                     <ul>
-                        <li>Base de 31k seguidores consolidada</li>
-                        <li>Operação estruturada (seg-sex 7h-21h)</li>
-                        <li>Posicionamento estabelecido no nicho</li>
-                        <li>Reconhecimento como referência regional</li>
-                        <li>Horários flexíveis atendem diversos perfis</li>
+                        <li><strong>Crescimento consistente:</strong> +55% seguidores mês/mês</li>
+                        <li><strong>Investimento eficiente:</strong> 800k+ visualizações pagas</li>
+                        <li><strong>Visitas ao perfil:</strong> +118% (1.828 → 3.994)</li>
+                        <li><strong>Posicionamento premium:</strong> Revenda Michelin</li>
+                        <li><strong>Presença consolidada:</strong> 3 unidades estratégicas</li>
                     </ul>
                 </div>
 
                 <div class="briefing-card">
-                    <h4>⚠️ Oportunidades de Melhoria</h4>
+                    <h4>⚠️ Gargalos Críticos</h4>
                     <ul>
-                        <li>Baixa conversão da audiência (0.13%)</li>
-                        <li>Comunicação pouco estratégica</li>
-                        <li>Limitação geográfica significativa</li>
-                        <li>Precificação sem estratégia de valor</li>
-                        <li>Potencial digital não explorado</li>
+                        <li><strong>Baixa frequência:</strong> Apenas 5-8 posts/mês</li>
+                        <li><strong>Engagement desproporcional:</strong> 460k alcance vs 1.8k interações</li>
+                        <li><strong>Dependência excessiva:</strong> 85% das visualizações são pagas</li>
+                        <li><strong>Conteúdo pouco conectivo:</strong> Falta storytelling</li>
+                        <li><strong>Taxa de cliques baixa:</strong> 140 cliques vs 465k alcance</li>
                     </ul>
                 </div>
 
                 <div class="briefing-card">
-                    <h4>🚀 Estratégias Curto Prazo</h4>
+                    <h4>🚀 Estratégias Imediatas</h4>
                     <ul>
-                        <li>Otimizar conversão com CTAs diretos</li>
-                        <li>Criar senso de urgência e escassez</li>
-                        <li>Segmentar audiência por perfil</li>
-                        <li>Implementar testimoniais de ex-alunas</li>
-                        <li>Campanha de reativação de base</li>
+                        <li><strong>Aumentar frequência:</strong> 15-20 posts mensais</li>
+                        <li><strong>Conteúdo educacional:</strong> 70% valor + 30% promocional</li>
+                        <li><strong>Formatos engajantes:</strong> Carrosséis, reels transformação</li>
+                        <li><strong>Stories interativos:</strong> Enquetes, perguntas, tutoriais</li>
+                        <li><strong>Segmentação premium:</strong> Proprietários de carros de luxo</li>
                     </ul>
                 </div>
 
                 <div class="briefing-card">
-                    <h4>🎯 Visão Longo Prazo</h4>
+                    <h4>🎯 Visão Estratégica</h4>
                     <ul>
-                        <li>Expansão para formato online nacional</li>
-                        <li>Desenvolvimento de produtos digitais</li>
-                        <li>Programa de certificação profissional</li>
-                        <li>Franquias e parcerias estratégicas</li>
-                        <li>Linha de produtos (roupas/acessórios)</li>
+                        <li><strong>Realocação de budget:</strong> 60% orgânico + 40% pago</li>
+                        <li><strong>Campanhas segmentadas:</strong> Awareness, retargeting, conversão</li>
+                        <li><strong>Nicho feminino:</strong> Mercado subutilizado</li>
+                        <li><strong>Parcerias estratégicas:</strong> Concessionárias premium</li>
+                        <li><strong>Programa fidelidade:</strong> Clientes recorrentes</li>
                     </ul>
                 </div>
             </div>
 
+            <div class="highlight-section">
+                <h3>📈 Plano de Otimização 90 Dias</h3>
+                <div class="solution-card">
+                    <h4>Mês 1: Reestruturação de Conteúdo</h4>
+                    <p>Implementar calendário editorial com 15+ posts mensais, focar em conteúdo educacional (como funciona injeção eletrônica, dicas de manutenção) e criar série "Transformação Moov" com antes/depois.</p>
+                </div>
+                <div class="solution-card">
+                    <h4>Mês 2: Otimização de Audiência</h4>
+                    <p>Segmentar campanhas por personas (proprietários premium, mulheres motoristas, entusiastas), implementar lookalike audiences dos melhores clientes e criar funil de nutrição.</p>
+                </div>
+                <div class="solution-card">
+                    <h4>Mês 3: Conversão e Fidelização</h4>
+                    <p>Lançar programa de relacionamento, implementar agendamento online via Instagram, criar campanhas de reativação para base existente e mensurar ROI detalhado.</p>
+                </div>
+            </div>
+
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <h4>Meta Engagement</h4>
+                    <div class="number">2,5%</div>
+                    <p>vs atual 0,39%</p>
+                </div>
+
+                <div class="metric-card">
+                    <h4>Frequência</h4>
+                    <div class="number">15+</div>
+                    <p>posts mensais</p>
+                </div>
+
+                <div class="metric-card">
+                    <h4>Orgânico</h4>
+                    <div class="number">40%</div>
+                    <p>das visualizações</p>
+                </div>
+
+                <div class="metric-card">
+                    <h4>Crescimento</h4>
+                    <div class="number">+500</div>
+                    <p>seguidores/mês</p>
+                </div>
+            </div>
+
             <button class="back-btn" onclick="showHome()">← Voltar ao Menu</button>
+        </div>
+
+        <!-- Seção Final -->
+        <div class="highlight-section" style="margin-top: 80px; text-align: center;">
+            <h3>🎯 Por que sou o candidato ideal para a Highlight?</h3>
+            <div class="briefing-grid">
+                <div class="briefing-card">
+                    <h4>🧠 Pensamento Estratégico</h4>
+                    <p>Capacidade demonstrada de transformar demandas desorganizadas em planos estruturados e executáveis, sempre conectando táticas aos objetivos de negócio.</p>
+                </div>
+                <div class="briefing-card">
+                    <h4>⚡ Resolução de Problemas</h4>
+                    <p>Identifico gargalos operacionais e proponho soluções práticas com cronogramas e KPIs claros, focando sempre na eficiência e resultados mensuráveis.</p>
+                </div>
+                <div class="briefing-card">
+                    <h4>📊 Orientação por Dados</h4>
+                    <p>Analiso métricas criticamente, identifico oportunidades e desenvolvo estratégias baseadas em insights reais, não apenas intuição.</p>
+                </div>
+                <div class="briefing-card">
+                    <h4>🤝 Comunicação Clara</h4>
+                    <p>Traduzo complexidade em simplicidade, facilitando o alinhamento entre stakeholders e garantindo que todos entendam os próximos passos.</p>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -753,6 +904,9 @@
             
             // Mostrar seção selecionada
             document.getElementById(sectionId).classList.add('active');
+            
+            // Scroll para o topo
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         function showHome() {
@@ -764,6 +918,9 @@
             
             // Mostrar navegação
             document.getElementById('home').style.display = 'grid';
+            
+            // Scroll para o topo
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         // Animações na rolagem
@@ -792,6 +949,39 @@
             const moveY = (e.clientY - window.innerHeight / 2) * 0.01;
             
             document.body.style.backgroundPosition = `${moveX}px ${moveY}px`;
+        });
+
+        // Adicionar efeito de digitação no título
+        function typeWriter(element, text, speed = 100) {
+            let i = 0;
+            element.innerHTML = '';
+            
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+            
+            type();
+        }
+
+        // Inicializar efeitos quando a página carregar
+        document.addEventListener('DOMContentLoaded', function() {
+            // Adicionar efeito hover aos cards
+            const cards = document.querySelectorAll('.nav-card, .briefing-card, .metric-card');
+            
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = this.classList.contains('nav-card') ? 
+                        'translateY(-15px) scale(1.02)' : 'translateY(-5px)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
         });
     </script>
 </body>
