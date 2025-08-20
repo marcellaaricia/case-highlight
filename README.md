@@ -21,7 +21,7 @@ Este repositório apresenta a resolução completa do processo seletivo para **G
 
 ## 🎨 Acesso ao Case Interativo
 
-### 🌟 [**VER APRESENTAÇÃO COMPLETA**](./index.html) 
+### 🌟 [**VER APRESENTAÇÃO COMPLETA**](https://marcellaaricia.github.io/case-highlight/) 
 
 *Clique no link acima para acessar a versão interativa com design moderno e navegação otimizada*
 
